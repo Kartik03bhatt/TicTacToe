@@ -20,10 +20,10 @@ int winner(char a[]){
 
 int main()
 {
-    char matrix[9],pos;
+    char matrix[]={'1','2','3','4','5','6','7','8','9'},pos;
     
     int turn=1;
-    while(winner(matrix[9])==0 or turn<=9){
+    while(winner(matrix)==0 or turn<=9){
         if(turn%2==0){
             cout<<"         X's Turn         \n";
         }
@@ -57,8 +57,11 @@ int main()
             }
         }
     turn++;    
+
     system("CLS");
     
     }
+
+
     return 0;
 }
